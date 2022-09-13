@@ -1,0 +1,8 @@
+package com.baidu.carlife.protobuf;
+message CarlifeBTHfpIndication
+{
+    required int32 state = 1;
+    optional string phoneNum = 2;
+    optional string phoneName = 3;
+	optional string address=4;
+}

@@ -1,0 +1,7 @@
+package com.baidu.carlife.protobuf;
+message CarlifeOil
+{
+	required int32 level = 1;
+	required int32 range = 2;
+	optional bool lowFuleWarning = 3;
+}

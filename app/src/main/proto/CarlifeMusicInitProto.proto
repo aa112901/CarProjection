@@ -1,0 +1,7 @@
+package com.baidu.carlife.protobuf;
+message CarlifeMusicInit
+{
+	required int32 sampleRate = 1;
+	required int32 channelConfig = 2;
+    required int32 sampleFormat = 3;
+}

@@ -1,0 +1,8 @@
+package com.baidu.carlife.protobuf;
+import "CarlifeTouchEventDeviceProto.proto";
+message CarlifeTouchEventAllDevice
+{
+    required int32 version = 1;
+    required int32 cnt = 2;
+	repeated com.baidu.carlife.protobuf.CarlifeTouchEventDevice devices = 3;
+}

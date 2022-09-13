@@ -1,0 +1,7 @@
+package com.baidu.carlife.protobuf;
+message CarlifeTouchAction
+{
+    required int32 action = 1;
+	required int32 x = 2;
+	required int32 y = 3;
+}

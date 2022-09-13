@@ -1,0 +1,5 @@
+package com.baidu.carlife.protobuf;
+message CarlifeAuthenRequest
+{
+    required string randomValue  = 1;
+}

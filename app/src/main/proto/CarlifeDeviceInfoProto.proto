@@ -1,0 +1,30 @@
+
+package com.example.car;
+option java_outer_classname = "CarlifeDeviceInfoProto";
+message	CarlifeDeviceInfo
+{
+				optional	string	os	=	1;
+                optional	string	board	=	2;
+                optional	string	bootloader	=	3;
+                optional	string	brand	=	4;
+                optional	string	cpu_abi	=	5;
+                optional	string	cpu_abi2	=	6;
+                optional	string	device	=7;
+                optional	string	display	=	8;
+                optional	string	fingerprint	=	9;
+                optional	string	hardware	=	10;
+                optional	string	host	=	11;
+                optional	string	cid	=	12;
+                optional	string	 manufacturer	 =	13;
+                optional	string	model	=	14;
+                optional	string	product	=	15;
+                optional	string	serial	=	16;
+                optional	string	codename	=	17;
+                optional	string	incremental	=	18;
+                optional	string	release	=	19;
+                optional	string	sdk	=	20;
+                optional	int32	sdk_int	=	21;
+                optional	string	token =	22;
+                optional	string	btaddress	=	23;
+                optional	string	btname	=	24;
+}

@@ -1,0 +1,7 @@
+package com.baidu.carlife.protobuf;
+import "CarlifeFeatureConfigProto.proto"; 
+message CarlifeFeatureConfigList
+{
+        required int32  cnt = 1;
+        repeated com.baidu.carlife.protobuf.CarlifeFeatureConfig featureConfig = 2;
+}

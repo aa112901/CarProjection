@@ -1,0 +1,5 @@
+package com.baidu.carlife.protobuf;
+message CarlifeBTStartIdentifyReq
+{
+    required string address = 1;
+}

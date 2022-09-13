@@ -1,0 +1,8 @@
+package com.baidu.carlife.protobuf;
+message CarlifeAcceleration
+{
+	required double accX = 1;
+	required double accY = 2;
+	required double accZ = 3;
+	optional uint64 timeStamp = 4;
+}

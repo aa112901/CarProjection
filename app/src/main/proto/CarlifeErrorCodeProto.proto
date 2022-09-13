@@ -1,0 +1,5 @@
+package com.baidu.carlife.protobuf;
+message CarlifeErrorCode
+{
+    required string errorCode = 1;
+}

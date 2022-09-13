@@ -1,0 +1,5 @@
+package com.baidu.carlife.protobuf;
+message CarlifeCarHardKeyCode
+{
+	required int32 keycode = 1;
+}

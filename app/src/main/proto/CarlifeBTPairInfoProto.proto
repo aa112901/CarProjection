@@ -1,0 +1,11 @@
+package com.baidu.carlife.protobuf;
+message CarlifeBTPairInfo
+{
+    required string address = 1;
+    optional string passKey = 2;
+    optional string hash = 3;
+    optional string randomizer = 4;
+    required string uuid = 5;
+    required string name = 6;
+    required int32 status = 7;
+}

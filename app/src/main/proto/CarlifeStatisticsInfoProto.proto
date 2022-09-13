@@ -1,0 +1,14 @@
+
+package com.example.car;
+option java_outer_classname = "CarlifeStatisticsInfoProto";
+message	CarlifeStatisticsInfo
+{
+required	string	cuid	=	1;
+required	string	versionName	=	2;
+required	int32	versionCode	=	3;
+required	string	channel	=	4;
+required	int32	connectCount	 =	5;
+required    int32   connectSuccessCount	=	6;
+required	int32	connectTime	=	7;
+optional	string	crashLog	=	8;
+}

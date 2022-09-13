@@ -1,0 +1,7 @@
+package com.baidu.carlife.protobuf;
+message CarlifeContacts
+{
+	required int32	cid = 1;
+	required string	name = 2;
+	required string number = 3;
+}

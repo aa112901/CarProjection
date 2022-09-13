@@ -1,0 +1,10 @@
+package com.baidu.carlife.protobuf;
+message CarlifeNaviNextTurnInfo
+{
+	required int32 action=1;
+	required int32 nextTurn=2;
+	required string roadName=3;
+	required int32 totalDistance=4;
+	required int32 remainDistance=5;
+	required int32 time=6;
+}

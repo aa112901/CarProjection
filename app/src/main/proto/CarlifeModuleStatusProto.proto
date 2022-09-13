@@ -1,0 +1,6 @@
+package com.baidu.carlife.protobuf;
+message CarlifeModuleStatus
+{
+	required int32 moduleID = 1;
+	required int32 statusID = 2;
+}

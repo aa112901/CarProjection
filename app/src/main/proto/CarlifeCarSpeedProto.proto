@@ -1,0 +1,6 @@
+package com.baidu.carlife.protobuf;
+message CarlifeCarSpeed
+{
+	required int32 speed = 1;
+	optional uint64 timeStamp = 2;
+}

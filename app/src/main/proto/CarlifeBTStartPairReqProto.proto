@@ -1,0 +1,6 @@
+package com.baidu.carlife.protobuf;
+message CarlifeBTStartPairReq
+{
+    required int32 ostype = 1;
+    optional string address = 2;
+}

@@ -1,0 +1,7 @@
+package com.baidu.carlife.protobuf;
+message CarlifeBTHfpRequest
+{
+    required int32 command = 1;
+    optional string phoneNum = 2;
+    optional int32 dtmfCode = 3;
+}

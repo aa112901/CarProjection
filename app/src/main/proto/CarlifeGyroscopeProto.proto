@@ -1,0 +1,9 @@
+package com.baidu.carlife.protobuf;
+message CarlifeGyroscope
+{
+	required int32 gyroType = 1;
+	required double gyroX = 2;
+	required double gyroy = 3;
+	required double gyroZ = 4;
+	optional uint64 timeStamp = 5;
+}

@@ -1,0 +1,5 @@
+package com.baidu.carlife.protobuf;
+message CarlifeConnectException
+{
+    required int32 exceptionType = 1;
+}

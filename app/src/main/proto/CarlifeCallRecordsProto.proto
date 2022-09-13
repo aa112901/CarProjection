@@ -1,0 +1,19 @@
+package com.baidu.carlife.protobuf;
+message CarlifeCallRecords
+{
+	required int32	cid = 1;
+	required string	name = 2;
+	required string number = 3;
+	required string duration = 4;
+	required string time = 5;
+	
+	enum CallRecordsType
+	{
+        DEFAULT_TYPE = 0;
+		INCOMING_TYPE = 1;
+		OUTGOING_TYPE = 2;
+		MISSED_TYPE = 3;
+	}
+
+    required CallRecordsType type = 6 [default = DEFAULT_TYPE];
+}

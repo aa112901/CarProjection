@@ -1,0 +1,10 @@
+package com.baidu.carlife.protobuf;
+message CarlifeTouchScroll
+{
+	required int32 x1 = 1;
+	required int32 y1 = 2;
+    required int32 x2 = 3;
+    required int32 y2 = 4;
+    required float distanceX = 5;
+    required float distanceY = 6;
+}

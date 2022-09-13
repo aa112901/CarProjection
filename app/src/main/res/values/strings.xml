@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">car</string>
+    <string name="accessibility_des">车机投屏服务，部分功能需要开启服务</string>
+</resources>

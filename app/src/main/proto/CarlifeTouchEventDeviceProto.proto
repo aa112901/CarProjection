@@ -1,0 +1,17 @@
+package com.baidu.carlife.protobuf;
+import "CarlifeTouchEventProto.proto";
+message CarlifeTouchEventDevice
+{
+    required int32 cid = 1;
+    required int32 eventx = 2;
+    required int32 screen_width = 3;
+    required int32 screen_height = 4;
+    required int32 abs_x_min = 5;
+    required int32 abs_x_max = 6;
+    required int32 abs_y_min = 7;
+    required int32 abs_y_max = 8;
+    required string device = 9;
+	repeated com.baidu.carlife.protobuf.CarlifeTouchEvent downEvent = 10;
+	repeated com.baidu.carlife.protobuf.CarlifeTouchEvent upEvent = 11;
+	repeated com.baidu.carlife.protobuf.CarlifeTouchEvent moveEvent = 12;
+}

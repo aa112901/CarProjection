@@ -1,0 +1,6 @@
+package com.baidu.carlife.protobuf;
+message CarlifeBTIdentifyResultInd
+{
+    required int32 status = 1;
+    required string address = 2;
+}

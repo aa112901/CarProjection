@@ -1,0 +1,5 @@
+package com.baidu.carlife.protobuf;
+message CarlifeGearInfo
+{
+	required int32 gear = 1;
+}

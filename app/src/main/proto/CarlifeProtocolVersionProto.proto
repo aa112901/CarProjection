@@ -1,0 +1,8 @@
+
+package com.example.car;
+option java_outer_classname = "CarlifeProtocolVersionProto";
+message	CarlifeProtocolVersion
+{
+				required    int32	majorVersion	=	1;
+				required	int32	minorVersion	=	2;
+}

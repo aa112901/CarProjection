@@ -1,0 +1,6 @@
+package com.baidu.carlife.protobuf;
+message CarlifeFeatureConfig
+{
+	required string key = 1;
+	required int32 value = 2;
+}

@@ -1,0 +1,10 @@
+package com.baidu.carlife.protobuf;
+message CarlifeNaviAssitantGuideInfo
+{
+	required int32 action = 1;
+	required int32 assistantType = 2;
+	required int32 trafficSignType=3;
+	required int32 totalDistance=4;
+	required int32 remainDistance=5;
+	required int32 cameraSpeed=6;
+}

@@ -1,0 +1,29 @@
+package com.baidu.carlife.protobuf;
+message CarlifeCarGps
+{
+    required uint32 antennaState = 1;
+	required uint32 signalQuality = 2;
+	required int32 latitude = 3;
+	required int32 longitude = 4;
+	required int32 height = 5;
+	required uint32 speed = 6;
+	required uint32 heading = 7;
+	required uint32 year =  8;
+	required uint32 month = 9;
+	required uint32 day = 10;
+	required uint32 hrs = 11;
+	required uint32 min = 12;
+	required uint32 sec = 13;
+	required uint32 fix = 14;
+	required uint32 hdop = 15;
+	required uint32 pdop = 16;
+	required uint32 vdop = 17;
+	required uint32 satsUsed = 18;
+	required uint32 satsVisible = 19;
+	required uint32 horPosError = 20;
+	required uint32 vertPosError = 21;
+	required int32 northSpeed = 22;
+	required int32 eastSpeed = 23;
+	required int32 vertSpeed = 24; 
+	optional uint64 timeStamp = 25;
+}

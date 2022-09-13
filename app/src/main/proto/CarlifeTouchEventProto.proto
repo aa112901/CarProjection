@@ -1,0 +1,7 @@
+package com.baidu.carlife.protobuf;
+message CarlifeTouchEvent
+{
+	required int32 type = 1;
+	required int32 code = 2;
+    required int32 value = 3;
+}

@@ -1,0 +1,6 @@
+package com.baidu.carlife.protobuf;
+message CarlifeBTHfpStatusResponse
+{
+    required int32 status = 1;
+    required int32 type = 2;
+}

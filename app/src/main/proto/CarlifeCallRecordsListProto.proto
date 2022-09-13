@@ -1,0 +1,7 @@
+package com.baidu.carlife.protobuf;
+import "CarlifeCallRecordsProto.proto";
+message CarlifeCallRecordsList
+{
+	required int32	cnt = 1;
+	repeated com.baidu.carlife.protobuf.CarlifeCallRecords carlifeCallRecords = 2;
+}

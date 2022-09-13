@@ -1,0 +1,7 @@
+
+package com.example.car;
+option java_outer_classname = "CarlifeProtocolVersionMatchStatusProto";
+message	CarlifeProtocolVersionMatchStatus
+{
+				 required	int32	matchStatus	=	1;
+}

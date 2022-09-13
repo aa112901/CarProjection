@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.protobuf'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.projection.car"
+        minSdkVersion 19
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            // 定义proto文件目录
+            java {
+                srcDir 'src/main/java'
+            }
+            proto {
+                srcDir 'src/main/proto'
+                include '**/*.proto'
+            }
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:26.1.0"
+    implementation "com.google.protobuf:protobuf-lite:3.0.0"
+//    implementation 'com.google.protobuf:protobuf-java:4.0.0-rc-2'
+//    implementation 'com.google.protobuf:protoc:4.0.0-rc-2'
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.0.0'
+    }
+    plugins {
+        javalite {
+            artifact = 'com.google.protobuf:protoc-gen-javalite:3.0.0'
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.plugins {
+                javalite {}
+            }
+        }
+    }
+}
+
+//protobuf {
+//    protoc {
+//        artifact = 'com.google.protobuf:protoc:3.6.1'
+//    }
+//
+//    generateProtoTasks {
+//        all().each { task ->
+//            task.builtins {
+//                remove java
+//            }
+//            task.builtins {
+//                java {}
+//            }
+//        }
+//    }
+//}
+

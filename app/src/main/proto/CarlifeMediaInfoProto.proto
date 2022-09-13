@@ -1,0 +1,13 @@
+package com.baidu.carlife.protobuf;
+message CarlifeMediaInfo
+{
+    required string source = 1;
+    required string song = 2;
+    required string artist = 3;
+    required string album = 4;
+    required bytes albumArt = 5;
+    required int32 duration = 6;
+    required int32 playlistNum = 7;
+    required string songId = 8;
+    required int32 mode = 9;
+}

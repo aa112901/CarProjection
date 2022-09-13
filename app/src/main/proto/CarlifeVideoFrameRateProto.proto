@@ -1,0 +1,5 @@
+package com.baidu.carlife.protobuf;
+message CarlifeVideoFrameRate
+{
+	required int32 frameRate = 1;
+}

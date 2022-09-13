@@ -1,0 +1,6 @@
+package com.baidu.carlife.protobuf;
+message CarlifeTouchSinglePoint
+{
+	required int32 x = 1;
+	required int32 y = 2;
+}

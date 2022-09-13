@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <usb-accessory
+        manufacturer="Baidu"
+        model="CarLife"
+        version="1.0.0" />
+</resources>

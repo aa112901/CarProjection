@@ -1,0 +1,7 @@
+
+package com.example.car;
+option java_outer_classname = "CarlifeAuthenResultProto";
+message	CarlifeAuthenResult
+{
+				 required bool	result =	1;
+}

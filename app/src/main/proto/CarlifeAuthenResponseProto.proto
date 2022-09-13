@@ -1,0 +1,5 @@
+package com.baidu.carlife.protobuf;
+message CarlifeAuthenResponse
+{
+    required string encryptValue = 1;
+}

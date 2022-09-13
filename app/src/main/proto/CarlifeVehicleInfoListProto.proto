@@ -1,0 +1,7 @@
+package com.baidu.carlife.protobuf;
+import "CarlifeVehicleInfoProto.proto";
+message CarlifeVehicleInfoList
+{
+	required int32 cnt = 1;
+	repeated CarlifeVehicleInfo vehicleInfo = 2;
+}
